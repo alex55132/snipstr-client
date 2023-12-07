@@ -1,0 +1,97 @@
+@import './base.css';
+
+#app {
+  display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+
+  background-color: #ede6df;
+}
+
+a,
+.green {
+  text-decoration: none;
+  /*color: hsla(160, 100%, 37%, 1);*/
+  color: #094044;
+  transition: 0.4s;
+}
+
+.mainButton {
+  background-color: #094044;
+  background-color: #d84f2a;
+  color: white;
+
+  border: #094044;
+  border: #d84f2a;
+  height: 40px;
+  box-shadow: 0px 1px 1px 0px #000000;
+
+  border-radius: 5px;
+  font-family: 'Kulim Park';
+}
+
+.mainButton:active {
+  background-color: #094044;
+  box-shadow: inset 0px 0px 10px 3px #181818;
+}
+
+.popupContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.popupContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background-color: #ede6df;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  width: 40%;
+  height: 30%;
+}
+
+.popupContent button {
+  width: 15%;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    padding: 0 2rem;
+  }
+}
