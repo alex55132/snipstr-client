@@ -4,6 +4,8 @@
 
 Snipstr is a self hosted tool created for allowing text content (snippets) to be sent securely to other devices.
 
+Server can be found [here](https://github.com/alex55132/snipstr-server)
+
 ## How does it work?
 
 By using the UI you can create a text snippet and password protect it (or not), so you will be able to check it out later via the generated link.
